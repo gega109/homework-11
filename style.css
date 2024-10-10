@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.container {
+    position: relative;
+}
+.bg_image {
+    z-index: 1;
+    position: absolute;
+    width: 1505px;
+    height: 866px;
+}
+.sun {
+    z-index: 2;
+    position: absolute;
+    left: 630px;
+    top: 30px;    
+    animation-name: sun;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+}
+@keyframes sun {
+    0% {
+        left: 630px;
+        top: 30px;
+    }
+    100% {
+        left: 630px;
+        top: 30px;
+        transform: rotateZ(360deg);
+    }
+}
+.cloud {
+    width: 200px;
+    height: 130px;
+    z-index: 3;
+    position: absolute;
+    top: 30px;
+    left: 1280px;
+    animation-name: cloud;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+}
+@keyframes cloud {
+    0% {
+        top: 30px;
+        left: 1280px;
+    }
+    25% {
+        top: 90px;
+        left: 960px;
+    }
+    50% {
+        top: 30px;
+        left: 640px;
+    }
+    75% {
+        top: 60px;
+        left: 320px;
+    }
+    100% {
+        top: 30px;
+        left: 0px;
+    }
+}
+.tree {
+    position: absolute;
+    z-index: 4;
+    top: 350px;
+    left:1320px;
+    width: 170px;
+    height: 230px;
+    animation: tree;
+    animation-duration: 0.45s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes tree {
+    0% {
+        top: 350px;
+        left:1320px;
+    }
+    100% {
+        top: 350px;
+        left: 0px;
+    }
+}
+.redmario {
+    width: 119px;
+    height: 127px;
+    position: absolute;
+    z-index: 3;
+    top: 600px;
+    left: 1px;
+    animation-name: redmario;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes redmario {
+    0% {
+        top: 600px;
+        left: 0;
+    }
+    50% {
+        top: 615px;
+        left: 500px;
+    }
+    70% {
+        top: 600px;
+        left: 800px;
+    }
+    100% {
+        top: 610px;
+        left: 1380px;
+    }
+}
+.greenmario {
+    width: 119px;
+    height: 127px;
+    position: absolute;
+    z-index: 2;
+    top: 735px;
+    left: 1px;
+    animation-name: greenmario;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+@keyframes greenmario {
+    0% {
+        top: 735px;
+        left: 1380px;
+    }
+    50% {
+        top: 740px;
+        left: 900px;
+    }
+    100% {
+        top: 735px;
+        left: 1250px;
+    }
+}
